@@ -156,7 +156,7 @@ body {
 }
 
 .nav-links a:hover {
-  color:#D4AF37;
+ color: #D4AF37;
 }
 
 .btn {
@@ -390,8 +390,8 @@ body {
 }
 
 .close-btn:hover {
-background-color:black;
-color:#D4AF37;
+  background-color:#7c6106;
+color: white;
 }
 
 .close-btn.small {
@@ -605,6 +605,8 @@ color: #D4AF37;
   overflow: hidden;
   width: 280px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #D4AF37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5), 0 0 30px rgba(212, 175, 55, 0.25), 0 0 60px rgba(212, 175, 55, 0.1);
 }
 
 .vocational-card img {

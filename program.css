@@ -24,12 +24,22 @@ body {
   top: 0;
   z-index: 1000;
   flex-wrap: wrap;
+  border-bottom: 1px solid #D4AF37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5), 0 0 30px rgba(212, 175, 55, 0.25), 0 0 60px rgba(212, 175, 55, 0.1);
 }
 
 .logo {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+}
+
+.first{
+  color: #D4AF37;
+
+}
+.second{
+  color: #ffffff;
 }
 
 .nav-links ul {
@@ -43,19 +53,15 @@ body {
   text-decoration: none;
   font-size: 18px;
   transition: color 0.3s;
+  
 }
 
 .nav-links a:hover {
-  color:#D4AF37;
+  
+ color: #D4AF37;
 }
 
-.first{
-  color:  rgb(1, 1, 71);
 
-}
-.second{
-  color: #D7428D;
-}
 .btn {
   display: flex;
   align-items: center;
@@ -73,7 +79,7 @@ body {
 }
 
 .btn:hover {
-  background-color:#0593d4;
+  background-color:#7c6106;
     color: white;
 
 }
@@ -405,6 +411,8 @@ body {
   background-color: #000000;
   color: #D4AF37;
   padding: 50px 8%;
+  border-top: 1px solid #D4AF37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5), 0 0 30px rgba(212, 175, 55, 0.25), 0 0 60px rgba(212, 175, 55, 0.1);
 }
 
 .footer-container {
@@ -441,7 +449,7 @@ body {
   text-align: center;
   margin-top: 35px;
   padding-top: 15px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  
   font-size: 14px;
 }
 
@@ -498,7 +506,8 @@ body {
 }
 
 .join-btn:hover {
-  background-color:#0593d4 ;
+  background-color:#7c6106;
+  color: white;
 }
 
 .join-img img {
@@ -980,7 +989,8 @@ nav a:hover {
   transition: 0.3s;
 }
 .btn-primary:hover {
-  background-color:#D4AF37;
+  background-color:#7c6106;
+ 
 }
 
 
