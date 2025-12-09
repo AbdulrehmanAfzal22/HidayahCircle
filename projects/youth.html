@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monthly Ration Support</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1; 
+    }
+
+   
+    .back-button {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      padding: 10px 20px;
+      background-color: #194592;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+      width: 100px;
+    }
+
+    .back-button:hover {
+      background-color: #0f2e70;
+    }
+
+
+    .ration-section {
+      max-width: 1100px;
+      margin: 20px auto 40px auto;
+      padding: 0 20px;
+    }
+
+    .ration-section h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #194592;
+      font-size: 32px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      transition: 0.4s ease;
+    }
+
+    .gallery-item::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0);
+      transition: 0.4s ease;
+    }
+
+    .gallery-item span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      opacity: 0;
+      transition: 0.4s ease, transform 0.4s ease;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item:hover::after {
+      background: rgba(0,0,0,0.45);
+    }
+
+    .gallery-item:hover span {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    /* Footer */
+    .footer {
+      width: 100%;
+      background-color: #194592;
+      color: white;
+      padding: 50px 5%;
+      box-sizing: border-box;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .footer-logo img {
+      width: 180px;
+    }
+
+    .footer h3 {
+      color: #ff9c33;
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer ul li {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    .footer ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer ul li a:hover {
+      color: #f08084;
+    }
+
+    .footer-about p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 35px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 14px;
+    }
+
+    @media(max-width: 600px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .footer-logo {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <a href="/projects.html" class="back-button"> Back</a>
+
+    <section class="ration-section">
+      <h1>Youth Development</h1>
+      <div class="gallery">
+     
+        <div class="gallery-item">
+          <img src="/ilm.jpeg" alt="">
+          <span>12 Jan 2024</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/ilm.jpeg" alt="">
+          <span>12 Jan 2024</span>
+        </div>
+        <div class="gallery-item">
+          <img src="/ilm.jpeg" alt="">
+          <span>12 Jan 2024</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="/d1h (2).svg" alt="Foundation Logo">
+      </div>
+      <div class="footer-about">
+        <h3>About Us</h3>
+        <p>
+          D1H Foundation is a global mission driven to support humanity with
+          impactful initiatives, education, and welfare support.
+          Together we uplift communities with compassion.
+        </p>
+      </div>
+      <div class="footer-programs">
+        <h3>Popular Programs</h3>
+        <ul>
+          <li>✔ Educational Programs</li>
+          <li>✔ Welfare Activities</li>
+          <li>✔ Climate Change Awareness</li>
+          <li>✔ Skills Development</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <ul>
+          <li>📱 <a href="https://wa.me/61450304678" target="_blank">+61 450-304-678</a></li>
+          <li>📞 <a href="tel:+923270195296">+92 327-0195296</a></li>
+          <li>✉ <a href="mailto:info@d1hfoundation.org">info@d1hfoundation.org</a></li>
+          <li>📍 Lahore - Pakistan</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2024 All Rights Reserved By D1H Foundation
+    </div>
+  </footer>
+
+</body>
+</html>
