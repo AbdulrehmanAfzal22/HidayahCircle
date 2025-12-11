@@ -275,13 +275,13 @@ body {
 }
 
 .text-section h2 {
-  color: #00587a;
+  color:#D4AF37;
   font-size: 26px;
   margin-bottom: 10px;
 }
 
 .text-section p {
-  color: #D4AF37;
+  color:#D4AF37;
   line-height: 1.6;
   font-size: 16px;
   margin-bottom: 25px;
@@ -484,12 +484,7 @@ color: #D4AF37;
   line-height: 1.3;
 }
 
-.text-section p {
-  color: #D4AF37;
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
+
 
 .text-section ul {
   list-style: none;

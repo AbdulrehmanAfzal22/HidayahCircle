@@ -970,3 +970,94 @@ background-color: #194592;
     height: 250px;
   }
 }
+
+
+
+.team-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.team-card {
+  background-color: #fff;
+  width: 250px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.image-box img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.team-card .role {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.team-card:hover .social-icons a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-card:hover .social-icons a:nth-child(1) img {
+  content: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png'); /* Instagram */
+}
+
+.team-card:hover .social-icons a:nth-child(2) img {
+  content: url('https://cdn-icons-png.flaticon.com/512/174/174857.png'); /* LinkedIn */
+}
+
+.team-card:hover .social-icons a:nth-child(3) img {
+  content: url('https://cdn-icons-png.flaticon.com/512/1384/1384060.png'); /* YouTube */
+}
+
+.team-card:hover .social-icons a:nth-child(4) img {
+  content: url('https://cdn-icons-png.flaticon.com/512/733/733579.png'); /* Twitter */
+}
+
+.social-icons a img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+}

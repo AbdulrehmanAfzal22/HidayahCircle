@@ -79,3 +79,24 @@ document.querySelectorAll("nav a, .nav-overlay a").forEach(link => {
     link.classList.add("active");
   }
 });
+
+const ayat = [
+    "إِنَّ مَعَ الْعُسْرِ يُسْرًا  — Indeed, with hardship comes ease. (94:6)",
+    "وَقُل رَّبِّ زِدْنِي عِلْمًا  — My Lord, increase me in knowledge. (20:114)",
+    "The Prophet ﷺ said: “The best of you are those who learn the Qur’an and teach it.” (Bukhari)",
+    "The Prophet ﷺ said: “Actions are judged by intentions.” (Bukhari)"
+];
+
+let index = 0;
+
+function rotateAyah() {
+    const ayahText = document.getElementById("ayah-text");
+    ayahText.classList.remove("fade"); 
+    void ayahText.offsetWidth; 
+    ayahText.classList.add("fade");
+    ayahText.innerText = ayat[index];
+    index = (index + 1) % ayat.length;
+}
+
+rotateAyah();
+setInterval(rotateAyah, 6000);

@@ -1100,12 +1100,13 @@ nav a:hover {
 
 
 .card:hover {
-
-  color: white;
-
-  transform: translateY(-15px); 
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); 
-  opacity: 0.95; 
+    color: white;
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.6), 0 0 30px rgba(212, 175, 55, 0.4);
+    opacity: 1;
+    background: linear-gradient(145deg, #D4AF37, #FFD700, #FFC107);
+    transition: all 0.35s 
+ease;
 }
 
 .card img {
@@ -1135,7 +1136,7 @@ nav a:hover {
 
 
 .card:hover h2 {
-  color:#000000; 
+  color:#ffffff; 
 }
 
 
